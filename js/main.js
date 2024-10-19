@@ -9,6 +9,10 @@ $(document).ready(function() {
         });
     }, 600);
 })
+document.addEventListener("click", function() {
+    const audio = document.getElementById("background-music");
+    audio.play();
+}, { once: true });
 
 function init(){
     $('#title').text(CONFIG.title)
